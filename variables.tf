@@ -4,6 +4,10 @@ variable "project_id" {
 }
 
 ############## Cloud Build Tigger Variables##################
+variable "use_existing_repo" {
+  type    = bool
+  default = false
+}
 
 variable "repo_name" {
   type        = string

@@ -8,6 +8,9 @@ Rectified the module
 # Release 1.0.3
 updated tag tigger
 
+# Release 1.0.4
+added flexibility to create cloud repo connection
+
 # Usage of this module
 ```
 module "cloud-build-trigger" {
