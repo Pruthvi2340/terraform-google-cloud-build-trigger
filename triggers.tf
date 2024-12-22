@@ -1,6 +1,5 @@
 # Create repo connection to host
 resource "google_cloudbuildv2_repository" "github_repo" {
-  count             = var.use_existing_repo ? 1 : 0
   project           = var.project_id
   location          = var.trigger_location
   name              = var.repo_name
@@ -27,7 +26,7 @@ resource "google_cloudbuild_trigger" "push_tag_event" {
   }
 
   repository_event_config {
-    repository = var.use_existing_repo ? google_cloudbuildv2_repository.github_repo[0].id : "projects/${var.project_id}/locations/${var.trigger_location}/connections/${var.connection_name}/repositories/${var.repo_name}"
+    repository = google_cloudbuildv2_repository.github_repo.id
 
     push {
       invert_regex = false
