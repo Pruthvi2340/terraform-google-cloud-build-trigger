@@ -1,7 +1,7 @@
 # Create repo connection to host
 resource "google_cloudbuildv2_repository" "github_repo" {
   project           = var.project_id
-  location          = var.location
+  location          = var.trigger_location
   name              = var.repo_name
   parent_connection = var.connection_name
   remote_uri        = var.repo_uri

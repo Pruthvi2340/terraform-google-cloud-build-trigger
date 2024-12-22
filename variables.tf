@@ -3,16 +3,6 @@ variable "project_id" {
   description = "The project ID where resources will be deployed."
 }
 
-variable "name" {
-  type        = string
-  description = "Name of the resource, used for various resources like the artifact registry."
-}
-
-variable "location" {
-  type        = string
-  description = "The region/location for Cloud resources."
-}
-
 ############## Cloud Build Tigger Variables##################
 
 variable "repo_name" {
@@ -21,7 +11,7 @@ variable "repo_name" {
 }
 
 variable "connection_name" {
-  type = string
+  type        = string
   description = "github connection name"
 }
 
