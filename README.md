@@ -1,9 +1,12 @@
-# Release 1.0.0
+# Release 1.0.1
 
 This module uses the conneciton from the established GITHUB connection to create cloud build trigger
 
-# Release 1.0.1
+# Release 1.0.2
 Rectified the module
+
+# Release 1.0.3
+updated tag tigger
 
 # Usage of this module
 ```

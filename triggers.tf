@@ -29,7 +29,6 @@ resource "google_cloudbuild_trigger" "push_tag_event" {
     repository = google_cloudbuildv2_repository.github_repo.id
 
     push {
-      branch       = "^main$"
       invert_regex = false
       tag          = ".*"
     }
