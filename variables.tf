@@ -39,13 +39,13 @@ variable "trigger_filename" {
 variable "ignored_files" {
   type        = list(string)
   default     = []
-  description = "Files to ignore in the Cloud Build trigger."
+  description = "any changes in the repo for this files to ignore in the Cloud Build trigger."
 }
 
 variable "included_files" {
   type        = list(string)
   default     = []
-  description = "Files to include in the Cloud Build trigger."
+  description = "Repo changes in this files to include in the Cloud Build trigger."
 }
 
 variable "substitutions" {

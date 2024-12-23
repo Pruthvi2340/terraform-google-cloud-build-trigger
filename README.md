@@ -11,11 +11,17 @@ updated tag tigger
 # Release 1.0.4
 added flexibility to create cloud repo connection
 
+# Release 1.0.5
+Fixed Module
+
+# Release 1.0.5
+added vairable included files and ignored files 
+
 # Usage of this module
 ```
 module "cloud-build-trigger" {
     source  = "Pruthvi2340/cloud-build-trigger/google"
-    version = "1.0.1"
+    version = "1.0.5"
     project_id             = "burner-prus"
     name                   = "retail-demo-app"
     location               = "us-central1"

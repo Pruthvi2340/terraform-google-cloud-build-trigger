@@ -13,8 +13,8 @@ resource "google_cloudbuild_trigger" "push_tag_event" {
   count           = var.push_tag_event ? 1 : 0
   disabled        = false
   filename        = var.trigger_filename
-  ignored_files   = []
-  included_files  = []
+  ignored_files   = var.ignored_files
+  included_files  = var.included_files
   location        = var.trigger_location
   name            = var.trigger_name
   project         = var.project_id
@@ -41,8 +41,8 @@ resource "google_cloudbuild_trigger" "push_event" {
   count           = var.push_event ? 1 : 0
   disabled        = false
   filename        = var.trigger_filename
-  ignored_files   = []
-  included_files  = []
+  ignored_files   = var.ignored_files
+  included_files  = var.included_files
   location        = var.trigger_location
   name            = var.trigger_name
   project         = var.project_id
@@ -69,8 +69,8 @@ resource "google_cloudbuild_trigger" "pull_request" {
   count           = var.pull_request ? 1 : 0
   disabled        = false
   filename        = var.trigger_filename
-  ignored_files   = []
-  included_files  = []
+  ignored_files   = var.ignored_files
+  included_files  = var.included_files
   location        = var.trigger_location
   name            = var.trigger_name
   project         = var.project_id
