@@ -14,7 +14,7 @@ added flexibility to create cloud repo connection
 # Release 1.0.5
 Fixed Module
 
-# Release 1.0.5
+# Release 1.0.6
 added vairable included files and ignored files 
 
 # Usage of this module
